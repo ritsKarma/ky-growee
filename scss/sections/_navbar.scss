@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+.menu{
+    background:transparent;
+    li{
+        padding: 0 0.7rem ;
+
+        a{
+            color: $primary !important;
+            font-weight: bold;
+        }
+    }
+}

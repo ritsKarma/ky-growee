@@ -11112,5 +11112,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.menu {
+  background: transparent;
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #695348 !important;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */
