@@ -1,0 +1,34 @@
+{
+  "name": "ky-growee-club",
+  "version": "1.0.0",
+  "description": "Landing page with bs5",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritsKarma/ky-growee-club.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "project"
+  ],
+  "author": "Rits-Jelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritsKarma/ky-growee-club/issues"
+  },
+  "homepage": "https://github.com/ritsKarma/ky-growee-club#readme",
+  "devDependencies": {
+    "sass": "^1.38.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.3",
+    "bootstrap": "^5.1.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
