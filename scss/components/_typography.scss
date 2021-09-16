@@ -1,25 +1,32 @@
+@use '../custom' as *;
 
 
-.display-6 {
+
+.display-2 {
     margin-top: 50px;
     margin-bottom: 1rem;
     
 
-    &--intro{
-        display: inline-block;
-        
-    }
-    &--description{
+    &--title{
         font-weight: 700;
         font-size: 2.5rem;
         display: block;
         text-transform: uppercase ;
-    }
+        }
+
+    &--description{
+        font-size: 23px;
+        display: block;
+        
+        text-align: justifyLeft;
+        }   
+        
 }
+
+
 .border-4{
     margin: 1rem 0;
     opacity: 0.5;
     max-width: 200px;
-    
     
 }
