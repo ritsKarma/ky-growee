@@ -1,16 +1,46 @@
-.postaw.bg-image{
-    background-image: url('/images/postaw.jpg');
-    
+@use "../custom" as *;
+
+.postaw.bg-image {
+  padding: 100px 0 100px 0;
+  background-image: url("/images/postaw.jpg");
+  //height: 800px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-.postaw2.bg-image{
-    background-image: url('/images/22.png');
-    background-size: 300px;
-    width: 600px;
-    height: 600px;
-   
-    
-    
-    
-   
+.postaw2.bg-image2 {
+  background-image: url("/images/2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-position: top;
+
+  @media (max-width: 1024px) {
+    background-image: url("/images/2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    padding: 0;
+  }
 }
+
+.half-section {
+  background-image: url("/images/2.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+// .postaw.bg-image {
+//     background-image: url("/images/postaw.jpg");
+//     background-position: bottom !important;
+//     height: 800px;
+//    }
+
+//   .half-section {
+//     background-image: url("/images/2.png");
+//     background-size: 50%;
+//     background-position:center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     min-height: 50vh;
+
+//   }

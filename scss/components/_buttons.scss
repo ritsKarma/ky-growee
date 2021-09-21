@@ -1,9 +1,18 @@
-.btn-rounded{
-    position: relative;
-    text-transform: capitalize;
-    padding: 0.9375rem 1.2rem;
-    font-weight: 500;
-    margin-top: 40px;
-    line-height: 1.2 ;
-    }
+.btn-rounded {
+  position: relative;
+  text-transform: capitalize;
+  padding: 0.9375rem 1.2rem;
+  font-weight: 500;
+  margin-top: 40px;
+  line-height: 1.2;
+}
 
+.zloz .btn-rounded {
+  width: inherit;
+  position: relative;
+  text-transform: capitalize;
+  padding: 0.9375rem 1.2rem;
+  font-weight: 500;
+  margin-top: 40px;
+  line-height: 1.2;
+}

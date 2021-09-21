@@ -29,6 +29,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "autoprefixer": "^10.3.3",
     "bootstrap": "^5.1.0",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^8.3.1",
+    "rfs": "^9.0.6"
   }
 }

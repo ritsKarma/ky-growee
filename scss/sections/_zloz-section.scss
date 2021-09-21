@@ -1,0 +1,23 @@
+@use "../custom" as *;
+.zloz {
+  color: #ffffff !important;
+}
+
+.zloz .border5 .border-top {
+  border-top-color: #354031;
+}
+
+.zloz .img-bg {
+  background-image: url("/images/zlol2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //height: 90vh;
+
+  @media (max-width: 767px) {
+    background-image: url("/images/zlol2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    padding: 0;
+  }
+}
