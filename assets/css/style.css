@@ -11264,23 +11264,38 @@ ul.dashed > li:before {
   background-position: center;
   height: 40vh;
 }
+@media (min-width: 576px) {
+  .postaw2.bg-image2 {
+    padding: 100px 0px 100px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+  }
+}
 @media (min-width: 768px) {
   .postaw2.bg-image2 {
     padding: 100px 0px 100px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media (min-width: 992px) {
   .postaw2.bg-image2 {
+    background-image: url("/images/2.png") !important;
     padding: 100px 0px 100px 0px;
-    height: 70vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.custom-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .wrap-effect img {

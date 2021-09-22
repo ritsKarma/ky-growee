@@ -21,21 +21,35 @@
   background-position: center;
   height: 40vh;
 
+  @include media-breakpoint-up(sm) {
+    padding: 100px 0px 100px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+  }
+
   @include media-breakpoint-up(md) {
     padding: 100px 0px 100px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: 40vh;
   }
   @include media-breakpoint-up(lg) {
+    background-image: url("/images/2.png") !important;
     padding: 100px 0px 100px 0px;
-    height: 70vh;
+    height: 60vh;
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.custom-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 // .postaw.bg-image {
