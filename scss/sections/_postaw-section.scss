@@ -6,13 +6,19 @@
   //height: 800px;
   background-repeat: no-repeat;
   background-position: bottom;
+  @media (max-width: 576px) {
+    background-repeat: no-repeat;
+
+    height: 50vh;
+    padding: 0;
+  }
 }
 
 .postaw2.bg-image2 {
   background-image: url("/images/2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  //background-position: top;
+  background-position: center;
 
   @media (max-width: 1024px) {
     background-image: url("/images/2.png");

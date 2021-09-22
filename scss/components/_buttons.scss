@@ -1,13 +1,29 @@
 .btn-rounded {
+  background: repeating-linear-gradient(
+    130deg,
+    #3d6553,
+    #3d6553 1px,
+    #537d69 3px,
+    #3d6553 4px
+  );
   position: relative;
-  text-transform: capitalize;
-  padding: 0.9375rem 1.2rem;
+  text-transform: uppercase;
+  padding: 18px 10px 18px 10px;
   font-weight: 500;
   margin-top: 40px;
-  line-height: 1.2;
+  line-height: 1;
+  border-radius: 10px;
+  border-color: #3d6553;
 }
 
 .zloz .btn-rounded {
+  background: repeating-linear-gradient(
+    130deg,
+    #eb8a00,
+    #eb8a00 1px,
+    #e77d00 3px,
+    #eb8a00 4px
+  );
   width: inherit;
   position: relative;
   text-transform: capitalize;
