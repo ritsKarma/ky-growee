@@ -1,14 +1,19 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
-.menu{
-    background:transparent;
-    margin-bottom: 60px;
-    li{
-        padding: 0 0.7rem ;
+.menu {
+  background: transparent;
+  margin-bottom: 60px;
+  li {
+    padding: 0 0.7rem;
 
-        a{
-            color: $primary !important;
-            font-weight: 600 !important;
-        }
+    a {
+      color: $primary !important;
+      font-weight: 600 !important;
     }
+  }
+}
+
+.nav-custom {
+  text-align: right;
+  line-height: 0.5;
 }

@@ -11231,6 +11231,11 @@ ul.dashed > li:before {
   font-weight: 600 !important;
 }
 
+.nav-custom {
+  text-align: right;
+  line-height: 0.5;
+}
+
 .intro-section {
   background-image: url(/images/banner.png);
   max-width: 100%;
@@ -11247,7 +11252,7 @@ ul.dashed > li:before {
 @media (max-width: 576px) {
   .postaw.bg-image {
     background-repeat: no-repeat;
-    height: 50vh;
+    height: auto;
     padding: 0;
   }
 }
@@ -11257,22 +11262,25 @@ ul.dashed > li:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 40vh;
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .postaw2.bg-image2 {
-    background-image: url("/images/2.png");
+    padding: 100px 0px 100px 0px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
-    padding: 0;
   }
 }
-
-.half-section {
-  background-image: url("/images/2.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position-x: 100%;
+@media (min-width: 992px) {
+  .postaw2.bg-image2 {
+    padding: 100px 0px 100px 0px;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .wrap-effect img {
