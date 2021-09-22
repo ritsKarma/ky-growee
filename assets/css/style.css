@@ -11262,31 +11262,30 @@ ul.dashed > li:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  height: 30vh;
 }
 @media (min-width: 576px) {
   .postaw2.bg-image2 {
-    padding: 100px 0px 100px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30vh;
-  }
-}
-@media (min-width: 768px) {
-  .postaw2.bg-image2 {
-    padding: 100px 0px 100px 0px;
+    padding: 60px 0px 60px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 40vh;
   }
 }
+@media (min-width: 768px) {
+  .postaw2.bg-image2 {
+    padding: 80px 0px 80px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+  }
+}
 @media (min-width: 992px) {
   .postaw2.bg-image2 {
-    background-image: url("/images/2.png") !important;
     padding: 100px 0px 100px 0px;
-    height: 60vh;
+    height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
