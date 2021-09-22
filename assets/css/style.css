@@ -11264,6 +11264,25 @@ ul.dashed > li:before {
   background-position-x: 100%;
 }
 
+.wrap-effect img {
+  transition: 0.5s ease;
+}
+
+.wrap-effect:hover img {
+  transform: scale(1.5);
+}
+
+.img2 {
+  overflow: hidden;
+  position: absolute;
+  transform: translate(-130%, 11%);
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+  .img2 {
+    height: 80px;
+  }
+}
+
 .zloz {
   color: #ffffff !important;
 }
