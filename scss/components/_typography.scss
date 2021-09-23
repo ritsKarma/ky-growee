@@ -46,9 +46,16 @@
 
 //for br underline
 .border-4 {
-  margin: 1rem 0;
+  justify-content: center;
+
   opacity: 0.5;
-  max-width: 200px;
+
+  @include media-breakpoint-up(sm) {
+    @include font-size(0.9rem);
+    width: 200px;
+
+    justify-content: flex-start;
+  }
 }
 .border-5 {
   margin: 1rem 0;

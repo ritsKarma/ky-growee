@@ -19,14 +19,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 30vh;
+  height: 40vh;
 
   @include media-breakpoint-up(sm) {
     padding: 60px 0px 60px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 40vh;
+    height: 55vh;
   }
 
   @include media-breakpoint-up(md) {
@@ -34,15 +34,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 45vh;
+    height: 55vh;
   }
   @include media-breakpoint-up(lg) {
-    padding: 100px 0px 100px 0px;
-    height: 65vh;
+    padding: 80px 0px 80px 0px;
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 55vh;
   }
 }
 
@@ -50,19 +50,3 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-// .postaw.bg-image {
-//     background-image: url("/images/postaw.jpg");
-//     background-position: bottom !important;
-//     height: 800px;
-//    }
-
-//   .half-section {
-//     background-image: url("/images/2.png");
-//     background-size: 50%;
-//     background-position:center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     min-height: 50vh;
-
-//   }

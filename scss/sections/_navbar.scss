@@ -17,3 +17,20 @@
   text-align: right;
   line-height: 0.5;
 }
+
+.navbar-brand {
+  @media screen and (max-width: 576px) {
+    margin-bottom: 20px;
+  }
+}
+
+.juscenter {
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: center !important;
+    text-align: center;
+    line-height: 0px;
+  }
+}
