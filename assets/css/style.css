@@ -11138,10 +11138,6 @@ textarea.form-control-lg {
   line-height: 1.2;
 }
 
-.display-1 {
-  margin-top: 50px;
-  margin-bottom: 1rem;
-}
 .display-1--title {
   font-size: calc(1.375rem + 1.5vw);
   color: #012e1a;
@@ -11204,9 +11200,15 @@ textarea.form-control-lg {
 }
 
 .border-5 {
-  margin: 1rem 0;
+  margin: 20px 0 30px 0;
   opacity: 0.5;
-  max-width: 115px;
+  max-width: 100px;
+}
+
+.card .border-5 {
+  margin: 20px 0 10px 0;
+  opacity: 0.5;
+  max-width: 100px;
 }
 
 ul.dashed {
@@ -11233,7 +11235,6 @@ ul.dashed > li:before {
 }
 .menu li a {
   color: #012e1a !important;
-  font-weight: 600 !important;
 }
 
 .nav-custom {
@@ -11265,8 +11266,16 @@ ul.dashed > li:before {
   background-size: cover;
 }
 
+.spraw {
+  margin: 40px 0 33px 0;
+}
+@media (min-width: 576px) {
+  .spraw {
+    margin: 80px 0 40px 0;
+  }
+}
+
 .postaw.bg-image {
-  padding: 100px 0 100px 0;
   background-image: url("/images/postaw.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -11277,6 +11286,10 @@ ul.dashed > li:before {
     height: auto;
     padding: 0;
   }
+}
+
+.postaw {
+  padding: 100px 0 100px 0;
 }
 
 .postaw2.bg-image2 {
@@ -11301,7 +11314,7 @@ ul.dashed > li:before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 55vh;
+    height: 50vh;
   }
 }
 @media (min-width: 992px) {
@@ -11310,13 +11323,12 @@ ul.dashed > li:before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 65vh;
   }
 }
 
-.custom-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.postaw .selected {
+  align-self: center;
 }
 
 .wrap-effect img {
@@ -11324,7 +11336,7 @@ ul.dashed > li:before {
 }
 
 .wrap-effect:hover img {
-  transform: scale(1.2);
+  transform: scale(1.04);
 }
 
 .zloz {
@@ -11380,6 +11392,18 @@ ul.dashed > li:before {
 @media (min-width: 576px) {
   .paddingimg {
     padding-right: 0;
+  }
+}
+
+.img-bgf {
+  background-image: url("/images/zlol2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 576px) {
+  .details-wrap {
+    padding-left: 15px;
   }
 }
 

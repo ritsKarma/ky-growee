@@ -1,0 +1,8 @@
+@use "../custom" as *;
+
+.spraw {
+  margin: 40px 0 33px 0;
+  @include media-breakpoint-up(sm) {
+    margin: 80px 0 40px 0;
+  }
+}

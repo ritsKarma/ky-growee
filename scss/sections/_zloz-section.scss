@@ -53,3 +53,15 @@
     padding-right: 0;
   }
 }
+
+.img-bgf {
+  background-image: url("/images/zlol2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.details-wrap {
+  @include media-breakpoint-up(sm) {
+    padding-left: 15px;
+  }
+}

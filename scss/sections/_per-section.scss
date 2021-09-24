@@ -1,7 +1,6 @@
 @use "../custom" as *;
 
 .postaw.bg-image {
-  padding: 100px 0 100px 0;
   background-image: url("/images/postaw.jpg");
   //height: 800px;
   background-repeat: no-repeat;
@@ -13,7 +12,9 @@
     padding: 0;
   }
 }
-
+.postaw {
+  padding: 100px 0 100px 0;
+}
 .postaw2.bg-image2 {
   background-image: url("/images/2.png");
   background-size: cover;
@@ -34,7 +35,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 55vh;
+    height: 50vh;
   }
   @include media-breakpoint-up(lg) {
     padding: 80px 0px 80px 0px;
@@ -42,11 +43,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 65vh;
   }
 }
 
-.custom-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.postaw .selected {
+  align-self: center;
 }
