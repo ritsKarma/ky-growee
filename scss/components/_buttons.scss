@@ -1,3 +1,4 @@
+@use "../custom" as *;
 .btn-rounded {
   background: repeating-linear-gradient(
     130deg,
@@ -24,11 +25,14 @@
     #e77d00 3px,
     #eb8a00 4px
   );
-
   position: relative;
   text-transform: uppercase;
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
-  margin-top: 40px;
-  line-height: 1.2;
+
+  @media (max-width: 576px) {
+    @include font-size(1rem);
+    display: block;
+    margin: 0 auto;
+  }
 }

@@ -4,6 +4,7 @@
 @use "components/buttons";
 @use "components/mixins";
 @use "components/typography";
+@use "components/animate";
 
 // IMPORT THE SECTIONS
 @use "sections/navbar";
@@ -12,6 +13,7 @@
 @use "sections/per-section";
 @use "sections/stworzony";
 @use "sections/zloz-section";
+@use "sections/modal-section";
 //import rfs
 
 @import "../node_modules/rfs/scss";
