@@ -1,5 +1,9 @@
 @use "../custom" as *;
 
+.form-check {
+  padding-left: 0 !important;
+}
+
 .display-1 {
   // margin-top: 50px;
   // margin-bottom: 1rem;

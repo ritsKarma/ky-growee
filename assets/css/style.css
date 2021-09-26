@@ -11128,7 +11128,7 @@ textarea.form-control-lg {
   border-color: #3d6553;
 }
 
-.zloz .btn-rounded {
+.placeorder .btn-rounded {
   background: repeating-linear-gradient(130deg, #eb8a00, #eb8a00 1px, #e77d00 3px, #eb8a00 4px);
   position: relative;
   text-transform: uppercase;
@@ -11136,11 +11136,15 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 @media (max-width: 576px) {
-  .zloz .btn-rounded {
+  .placeorder .btn-rounded {
     font-size: 1rem;
     display: block;
     margin: 0 auto;
   }
+}
+
+.form-check {
+  padding-left: 0 !important;
 }
 
 .display-1--title {
@@ -11387,38 +11391,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .intro-section {
   background-image: url(/images/banner.png);
-  max-width: 100%;
   height: 700px;
-  background-size: cover;
+  background-position: left;
+}
+@media (min-width: 768px) {
+  .intro-section {
+    max-width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-.spraw {
+.img-overlay {
+  position: relative;
+}
+.testimonials {
   margin: 40px 0 33px 0;
 }
 @media (min-width: 576px) {
-  .spraw {
+  .testimonials {
     margin: 80px 0 40px 0;
   }
 }
 
-.postaw.bg-image {
+.development.bg-image {
   background-image: url("/images/postaw.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
 @media (max-width: 576px) {
-  .postaw.bg-image {
+  .development.bg-image {
     background-repeat: no-repeat;
     height: auto;
     padding: 0;
   }
 }
 
-.postaw {
+.development {
   padding: 100px 0 100px 0;
 }
 
-.postaw2.bg-image2 {
+.development2.bg-image2 {
   background-image: url("/images/2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -11426,7 +11442,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 40vh;
 }
 @media (min-width: 576px) {
-  .postaw2.bg-image2 {
+  .development2.bg-image2 {
     padding: 60px 0px 60px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11435,7 +11451,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 @media (min-width: 768px) {
-  .postaw2.bg-image2 {
+  .development2.bg-image2 {
     padding: 80px 0px 80px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11444,7 +11460,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 @media (min-width: 992px) {
-  .postaw2.bg-image2 {
+  .development2.bg-image2 {
     padding: 80px 0px 80px 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11453,7 +11469,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-.postaw .selected {
+.development .selected {
   align-self: center;
 }
 
@@ -11465,21 +11481,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transform: scale(1.04);
 }
 
-.zloz {
+.placeorder {
   color: #fff !important;
 }
 
-.zloz .border5 .border-top {
+.placeorder .border5 .border-top {
   border-top-color: #354031;
 }
 
-.zloz .img-bg {
+.placeorder .img-bg {
   background-image: url("/images/zlol2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
-  .zloz .img-bg {
+  .placeorder .img-bg {
     background-image: url("/images/zlol2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -11535,10 +11551,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .imgm {
   background-image: url("/images/zlol2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#orderModal {
+  background: rgba(2, 33, 8, 0.5);
 }
 
 .modal-dialog {
   max-width: 900px;
+}
+
+.modal-body {
+  padding: 0;
+}
+.modal-body .btn-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 99;
+}
+.modal-body .btn.btn-rounded {
+  background: repeating-linear-gradient(130deg, #eb8a00, #eb8a00 1px, #e77d00 3px, #eb8a00 4px);
+  border: 1px solid white;
 }
 
 .modal-content {
@@ -11587,8 +11623,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media (max-width: 767.98px) {
+  .modal-dialog {
+    margin: 25px;
+  }
+
   .modal-content .modal-body .icon span {
     font-size: 100px;
+  }
+
+  .modal-body {
+    min-height: 400px;
   }
 }
 .modal-content .modal-body .icon-2 {

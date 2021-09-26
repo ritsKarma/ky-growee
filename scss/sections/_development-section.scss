@@ -1,6 +1,6 @@
 @use "../custom" as *;
 
-.postaw.bg-image {
+.development.bg-image {
   background-image: url("/images/postaw.jpg");
   //height: 800px;
   background-repeat: no-repeat;
@@ -12,10 +12,10 @@
     padding: 0;
   }
 }
-.postaw {
+.development {
   padding: 100px 0 100px 0;
 }
-.postaw2.bg-image2 {
+.development2.bg-image2 {
   background-image: url("/images/2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,6 +47,6 @@
   }
 }
 
-.postaw .selected {
+.development .selected {
   align-self: center;
 }
