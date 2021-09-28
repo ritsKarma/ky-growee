@@ -2394,29 +2394,29 @@ textarea.form-control-lg {
 .form-check {
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5em;
+  padding-left: 2em;
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
   float: left;
-  margin-left: -1.5em;
+  margin-left: -2em;
 }
 
 .form-check-input {
-  width: 1em;
-  height: 1em;
-  margin-top: 0.25em;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0em;
   vertical-align: top;
-  background-color: #e1e1e1;
+  background-color: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 3px solid #012e1a;
   appearance: none;
   color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
-  border-radius: 0.25em;
+  border-radius: 0.3em;
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -11143,10 +11143,6 @@ textarea.form-control-lg {
   }
 }
 
-.form-check {
-  padding-left: 0 !important;
-}
-
 .display-1--title {
   font-size: calc(1.375rem + 1.5vw);
   color: #012e1a;
@@ -11191,6 +11187,30 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .display-2--description {
     font-size: 0.9rem;
+    display: inline-block;
+  }
+}
+
+.display-3--title {
+  font-size: calc(1.275rem + 0.3vw);
+  color: #012e1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .display-3--title {
+    font-size: 1.5rem;
+  }
+}
+.display-3--description {
+  font-size: 0.7rem;
+  color: #012e1a;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .display-3--description {
+    font-size: 0.7rem;
     display: inline-block;
   }
 }
@@ -11549,10 +11569,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-.imgm {
-  background-image: url("/images/zlol2.png");
+.img-modal {
+  background-image: url("/images/zlol4.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-color: #e0e1e5;
+  background-size: 100% 100%;
+}
+
+.three_feilds {
+  display: none;
 }
 
 #orderModal {
@@ -11560,7 +11587,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .modal-dialog {
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .modal-body {
@@ -11647,7 +11674,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .modal-content .label {
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 450;
   letter-spacing: 1px;
 }
 
@@ -11655,7 +11683,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background: transparent;
   border: none;
   border-radius: 0;
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: #012e1a !important;
   padding: 0;
   height: 30px;
   border-bottom: 1px solid #012e1a;
@@ -11688,6 +11716,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .modal-content .btn-primary {
   background: #5eb7b7 !important;
   height: 52px;
+}
+
+.modal-body .border-5 {
+  margin: 10px 0 10px 0;
+  max-width: 60px;
+}
+
+.modal .form-group .btn-rounded {
+  background: repeating-linear-gradient(130deg, #ffac36, #ffbc5d 1px, #ffa841 3px, #ffb348 4px);
+  position: relative;
+  text-transform: uppercase;
+  padding: 0.9375rem 1.2rem;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .modal .form-group .btn-rounded {
+    font-size: 0.6rem;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px !important;
+  }
+}
+
+.modal-right-content {
+  margin-top: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

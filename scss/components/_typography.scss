@@ -1,9 +1,5 @@
 @use "../custom" as *;
 
-.form-check {
-  padding-left: 0 !important;
-}
-
 .display-1 {
   // margin-top: 50px;
   // margin-bottom: 1rem;
@@ -43,6 +39,27 @@
 
     @include media-breakpoint-up(md) {
       @include font-size(0.9rem);
+      display: inline-block;
+    }
+  }
+}
+
+.display-3 {
+  &--title {
+    @include font-size(1.5rem);
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &--description {
+    @include font-size(0.7rem);
+    // display: block;
+    color: $primary;
+    font-weight: 400;
+
+    @include media-breakpoint-up(md) {
+      @include font-size(0.7rem);
       display: inline-block;
     }
   }
