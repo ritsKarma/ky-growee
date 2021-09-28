@@ -11570,16 +11570,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .img-modal {
-  background-image: url("/images/zlol4.png");
+  background-image: url("/images/zloz4.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e0e1e5;
   background-size: 100% 100%;
-}
-
-.three_feilds {
-  display: none;
 }
 
 #orderModal {
@@ -11598,10 +11594,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   right: 1rem;
   top: 1rem;
   z-index: 99;
-}
-.modal-body .btn.btn-rounded {
-  background: repeating-linear-gradient(130deg, #eb8a00, #eb8a00 1px, #e77d00 3px, #eb8a00 4px);
-  border: 1px solid white;
 }
 
 .modal-content {
@@ -11691,6 +11683,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .modal-content .form-control:focus {
   border-bottom: 1px solid #e88500;
+  outline-width: 0;
 }
 
 .modal-content .form-control::-webkit-input-placeholder {
@@ -11729,6 +11722,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-transform: uppercase;
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
+  border: 1px solid #ffb348;
+}
+.modal .form-group .btn-rounded:hover {
+  color: white;
 }
 @media (max-width: 576px) {
   .modal .form-group .btn-rounded {
