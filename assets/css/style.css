@@ -5280,17 +5280,17 @@ textarea.form-control-lg {
 
 .btn-close {
   box-sizing: content-box;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   padding: 0.25em 0.25em;
-  color: #000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  color: #012e1a;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23012e1a'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1.5em auto no-repeat;
   border: 0;
   border-radius: 0.25rem;
-  opacity: 0.5;
+  opacity: 1;
 }
 .btn-close:hover {
-  color: #000;
+  color: #012e1a;
   text-decoration: none;
   opacity: 0.75;
 }
@@ -11135,6 +11135,9 @@ textarea.form-control-lg {
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
 }
+.placeorder .btn-rounded:hover {
+  background: repeating-linear-gradient(130deg, #ffac36, #e29529 1px, #ffa841 3px, #ffb348 4px);
+}
 @media (max-width: 576px) {
   .placeorder .btn-rounded {
     font-size: 1rem;
@@ -11571,11 +11574,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .img-modal {
   background-image: url("/images/zlol4.png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-color: #e0e1e5;
-  background-size: 100% 100%;
+  background-size: contain;
+  height: 100%;
+}
+@media (min-width: 576px) {
+  .img-modal {
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .img-modal {
+    background-position: top;
+    background-size: 100% 100%;
+  }
+}
+
+.img-modal2 {
+  background-image: url("/images/modal2.jpg");
+  background-repeat: no-repeat;
+  background-color: #e0e1e5;
+  background-size: contain;
+  height: 100%;
+}
+@media (min-width: 576px) {
+  .img-modal2 {
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .img-modal2 {
+    background-position: top;
+    background-size: 100% 100%;
+  }
 }
 
 .three_feilds {
@@ -11734,8 +11766,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   max-width: 60px;
 }
 
-.modal .form-group .btn-rounded {
+.modal .btn-rounded {
   background: repeating-linear-gradient(130deg, #ffac36, #ffbc5d 1px, #ffa841 3px, #ffb348 4px);
+  width: 100%;
+  justify-content: center;
   color: #012e1a;
   position: relative;
   text-transform: uppercase;
@@ -11743,12 +11777,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: 700;
   border: 1px solid #ffb348;
 }
-.modal .form-group .btn-rounded:hover {
+.modal .btn-rounded:hover {
   background: repeating-linear-gradient(130deg, #ffac36, #e29529 1px, #ffa841 3px, #ffb348 4px);
 }
 @media (max-width: 576px) {
-  .modal .form-group .btn-rounded {
-    font-size: 0.6rem;
+  .modal .btn-rounded {
+    font-size: 0.9rem;
     margin-top: 20px;
     display: block;
     margin: 0 auto;
@@ -11757,7 +11791,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .modal-right-content {
-  margin-top: 500px;
+  margin-top: 250px;
+}
+@media (min-width: 576px) {
+  .modal-right-content {
+    margin-top: 500px;
+  }
+}
+
+.modal .display-2--title {
+  text-transform: none;
 }
 
 /*# sourceMappingURL=style.css.map */

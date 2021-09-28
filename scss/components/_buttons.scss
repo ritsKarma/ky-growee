@@ -30,6 +30,16 @@
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
 
+  &:hover {
+    background: repeating-linear-gradient(
+      130deg,
+      #ffac36,
+      #e29529 1px,
+      #ffa841 3px,
+      #ffb348 4px
+    );
+  }
+
   @media (max-width: 576px) {
     @include font-size(1rem);
     display: block;

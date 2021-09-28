@@ -2,11 +2,39 @@
 
 .img-modal {
   background-image: url("/images/zlol4.png");
-  background-size: cover;
+
   background-repeat: no-repeat;
-  background-position: center;
   background-color: #e0e1e5;
-  background-size: 100% 100%;
+  background-size: contain;
+  height: 100%;
+
+  @include media-breakpoint-up(sm) {
+    background-size: cover;
+    // background-size: 100% 100%;
+  }
+  @include media-breakpoint-up(md) {
+    background-position: top;
+    background-size: 100% 100%;
+  }
+}
+
+// background for the second modal
+.img-modal2 {
+  background-image: url("/images/modal2.jpg");
+
+  background-repeat: no-repeat;
+  background-color: #e0e1e5;
+  background-size: contain;
+  height: 100%;
+
+  @include media-breakpoint-up(sm) {
+    background-size: cover;
+    // background-size: 100% 100%;
+  }
+  @include media-breakpoint-up(md) {
+    background-position: top;
+    background-size: 100% 100%;
+  }
 }
 
 // new code
@@ -165,7 +193,7 @@
 }
 
 //button
-.modal .form-group .btn-rounded {
+.modal .btn-rounded {
   background: repeating-linear-gradient(
     130deg,
     #ffac36,
@@ -173,6 +201,8 @@
     #ffa841 3px,
     #ffb348 4px
   );
+  width: 100%;
+  justify-content: center;
   color: $primary;
   position: relative;
   text-transform: uppercase;
@@ -190,7 +220,7 @@
   }
 
   @media (max-width: 576px) {
-    @include font-size(0.6rem);
+    @include font-size(0.9rem);
     margin-top: 20px;
     display: block;
     margin: 0 auto;
@@ -199,5 +229,12 @@
 }
 
 .modal-right-content {
-  margin-top: 500px;
+  margin-top: 250px;
+  @include media-breakpoint-up(sm) {
+    margin-top: 500px;
+  }
+}
+
+.modal .display-2--title {
+  text-transform: none;
 }

@@ -287,10 +287,11 @@
             Zestaw zawiera:</span>
             <ul class="dashed">
               <li>drewniany stolik edukacyjny</li>
-              <li>drewniane krzesełko</li>
               <li>dwustronny blat</li>
               <li>stopki z mocowaniem - wysokość 6 cm</li>
+              <li>drewniane krzesełko x 2</li>
             </ul>
+             
           <span class="display-1--description text-light ">Wymiary:</span>
           <ul class="dashed">
             <li>stolik – 50 x 50 x 40 – 46 cm (regulowana wysokość)</li>
@@ -304,7 +305,7 @@
           <br>
 
 
-          <button type="button" class="btn btn-rounded btn-secondary btn-lg text-light" data-bs-toggle="modal" data-bs-target="#orderModal">zamów zestaw </br>stolik z
+          <button type="button" class="btn btn-rounded btn-secondary btn-lg text-light" data-bs-toggle="modal" data-bs-target="#second-Modal">zamów zestaw </br>stolik z
             krzesełkiem</button>
         </div>
         <div class="col-12 col-md-6 paddingimgtop">
@@ -377,10 +378,9 @@
               Zestaw zawiera:</span>
               <ul class="dashed">
                 <li>drewniany stolik edukacyjny</li>
-                <li>drewniane krzesełko</li>
                 <li>dwustronny blat</li>
                 <li>stopki z mocowaniem - wysokość 6 cm</li>
-                <li>drewniane krzesełko x 2</li>
+                <li>drewniane krzesełko</li>
               </ul>
             <span class="display-1--description text-light ">Wymiary:</span>
             <ul class="dashed">
@@ -407,38 +407,37 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="row no-gutters">
           <div class="col-md-6 d-flex">
-            <div class="modal-inner-body p-2 p-md-5 img d-flex color-2">
+            <div class="modal-inner-body p-3 p-md-5  img d-flex color-2">
               <div class="text w-100 py-0 ">
-                <!-- <h3 class="fw-bold">ZAMÓW PRODUKT</h3> -->
                 <span class="display-3--title">ZAMÓW PRODUKT</span>
                 <hr class=" border-5 border-top border-primary">
                 <form action="#" class="signup-form">
                   <div class="form-group">
-                    <input type="text" class="form-control" >
-                    <label class="label" for="name">Imię i nazwisko*</label>
+                    <input type="text" class="form-control" required="true">
+                    <label class="label" for="name" >Imię i nazwisko*</label>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control">
-                    <label class="label" for="email">Adres dostawy*</label>
+                    <input type="email" class="form-control" required="true">
+                    <label class="label" for="email" >Adres dostawy*</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="phone">
-                    <label class="label" for="phone">Telefon*</label>
+                    <input type="text" class="form-control" id="phone" required="true">
+                    <label class="label" for="phone" >Telefon*</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="email" >
-                    <label class="label" for="email">Email*</label>
+                    <input type="text" class="form-control" id="email" required="true">
+                    <label class="label" for="email" >Email*</label>
                   </div>
                   <div class="form-group mb-1">
-                    <input type="email" class="form-control" id="emailConfirm" >
-                    <label class="label" for="emailConfirm">Potwierdź email*</label>
+                    <input type="email" class="form-control" id="emailConfirm" required="true">
+                    <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
                   </div>
                   <div class="form-group">
                     <div class="form-check text-left mt-3">
                       <label  class="custom-control fill-checkbox">
-                        <input id="invoiceData" type="checkbox" class=" form-check-input fill-control-input">
+                        <input id="invoiceData" type="checkbox" class=" form-check-input fill-control-input" required="true">
                         <span class="fill-control-indicator"></span>
-                        <span class="fill-control-description display-3--description"> DANE DO FAKURY</span>
+                        <span class="fill-control-description display-3--description">DANE DO FAKURY*</span>
                       </label>
                     </div>
                   </div>
@@ -448,11 +447,11 @@
                       <label class="label" for="company">Nazwa firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="addressCompany">
+                      <input type="text" class="form-control" id="addressCompany" required="true">
                       <label class="label" for="addressCompany">Adres firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="taxnumber">
+                      <input type="text" class="form-control" id="taxnumber" required="true"> 
                       <label class="label" for="taxnumber">NIP</label>
                     </div>
                 </div>
@@ -464,7 +463,7 @@
                         <label class="custom-control fill-checkbox">
                           <input type="checkbox" class=" form-check-input fill-control-input">
                           <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description display-3--description "> Oświadczam ze zapoznałem się z Regulaminem Serwisu</span>
+                          <span class="fill-control-description display-3--description "> Oświadczam ze zapoznałem się z Regulaminem Serwisu*</span>
                         </label>
                       </div>
                     </div>
@@ -473,37 +472,37 @@
                         <label class="custom-control fill-checkbox">
                           <input type="checkbox" class=" form-check-input fill-control-input">
                           <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description display-3--description"> Akceptuję politykę prywatności</span>
+                          <span class="fill-control-description display-3--description"> Akceptuję politykę prywatności*</span>
                         </label>
                       </div>
                     </div>
                    
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-rounded btn-secondary btn-lg d-flex">zamów zestaw </br>
+                  
+                    <button  class="btn btn-rounded btn-secondary btn-lg d-flex" type="submit">zamów zestaw </br>
                       stolik z dwoma krzesełami</button>
-                  </div>
+                  
                   
                 </form>
                </div>
             </div>
           </div>
           <div class="col-md-6 d-inline-flex">
-            <div class="modal-body p-5 img-modal d-flex">
-              <div class="text w-100">
+            <div class="modal-body p-3 p-md-5 img-modal d-flex">
+              <div class="text ">
                 <span class=""></span>
                 <span class="display-3--title">Co zamawiasz</span>
                   <hr class=" border-5 border-top border-primary">
 
                   <div class="modal-right-content text-start d-flex-row " >
-                    <span class="display-1--description text-uppercase mb-3  ">PODSUMOWANIE KOSZTÓW PRODUKTU <br>
+                    <span class="display-1--description text-uppercase mb-3  ">PODSUMOWANIE KOSZTÓW PRODUKTU<br> 
                       I DOSTAWY:</span>
-                        <span class="display-1--description ">1. Cena zestawu:  899zł</span> <br>
-                          <span class="display-1--description mb-3">2. Cena zestawu:  30zł</span>
+                        <span class="display-1--description ">1. Cena zestawu: 1199zł</span> <br>
+                          <span class="display-1--description mb-3">2. Cena przesyłki: 30zł</span>
                         
                         <br>
-                        <span class="display-2--description">Suma:</span><br>
-                        <span class="display-2--title">1299 zł</span> <br>
-                        <br>
+                        <span class="display-2--description">Suma:</span>
+                        <h1 class="display-2--title">1299 zł</h1> 
+                        
                   </div>
 
                 <div class="icon">
@@ -520,9 +519,130 @@
 </div>
 
   <!-- Model End -->
-  
+
+  <!-- Modal 2 -->
+<div class="modal fade text-primary" id="second-Modal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="row no-gutters">
+          <div class="col-md-6 d-flex">
+            <div class="modal-inner-body p-3 p-md-5  img d-flex color-2">
+              <div class="text w-100 py-0 ">
+                <span class="display-3--title">ZAMÓW PRODUKT</span>
+                <hr class=" border-5 border-top border-primary">
+                <form action="#" class="signup-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" required="true">
+                    <label class="label" for="name" >Imię i nazwisko*</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" required="true">
+                    <label class="label" for="email" >Adres dostawy*</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="phone" required="true">
+                    <label class="label" for="phone" >Telefon*</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="email" required="true">
+                    <label class="label" for="email" >Email*</label>
+                  </div>
+                  <div class="form-group mb-1">
+                    <input type="email" class="form-control" id="emailConfirm" required="true">
+                    <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check text-left mt-3">
+                      <label  class="custom-control fill-checkbox">
+                        <input id="invoiceData" type="checkbox" class=" form-check-input fill-control-input" required="true">
+                        <span class="fill-control-indicator"></span>
+                        <span class="fill-control-description display-3--description">DANE DO FAKURY*</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="invoiceFields" class="three_feilds">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="company" >
+                      <label class="label" for="company">Nazwa firmy</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="addressCompany" required="true">
+                      <label class="label" for="addressCompany">Adres firmy</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="taxnumber" required="true"> 
+                      <label class="label" for="taxnumber">NIP</label>
+                    </div>
+                </div>
+                  <span class="display-3--description mt-2 "> *informacja - numer zamówienia oraz dane do płatności zostaną
+                    przekazane za pomocą wiadomości email po wysłaniu wypełnionego 
+                    zamówienia.</span>
+                    <div class="form-group">
+                      <div class="form-check text-left mt-3">
+                        <label class="custom-control fill-checkbox">
+                          <input type="checkbox" class=" form-check-input fill-control-input">
+                          <span class="fill-control-indicator"></span>
+                          <span class="fill-control-description display-3--description "> Oświadczam ze zapoznałem się z Regulaminem Serwisu*</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check text-left">
+                        <label class="custom-control fill-checkbox">
+                          <input type="checkbox" class=" form-check-input fill-control-input">
+                          <span class="fill-control-indicator"></span>
+                          <span class="fill-control-description display-3--description"> Akceptuję politykę prywatności*</span>
+                        </label>
+                      </div>
+                    </div>
+                   
+                  
+                    <button  class="btn btn-rounded btn-secondary btn-lg d-flex" type="submit">zamów zestaw </br>
+                      stolik z krzesełami</button>
+                  
+                  
+                </form>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-inline-flex">
+            <div class="modal-body p-3 p-md-5 img-modal2 d-flex">
+              <div class="text ">
+                <span class=""></span>
+                <span class="display-3--title">Co zamawiasz</span>
+                  <hr class=" border-5 border-top border-primary">
+
+                  <div class="modal-right-content text-start d-flex-row " >
+                    <span class="display-1--description text-uppercase mb-3  ">PODSUMOWANIE KOSZTÓW PRODUKTU<br> 
+                      I DOSTAWY:</span>
+                        <span class="display-1--description ">1. Cena zestawu: 899 zł</span> <br>
+                          <span class="display-1--description mb-3">2. Cena przesyłki: 30 zł</span>
+                        
+                        <br>
+                        <span class="display-2--description">Suma:</span>
+                        <h1 class="display-2--title">929 zł</h1> 
+                        
+                  </div>
+
+                <div class="icon">
+                  <span class="ion-ios-bicycle"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
+
+</div>
+
+<!-- Model 2 End -->
+  
 
 
    <!-- Option 2: Separate Popper and Bootstrap JS -->
