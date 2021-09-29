@@ -2,7 +2,6 @@
 
 .img-modal {
   background-image: url("/images/zlol4.png");
-
   background-repeat: no-repeat;
   background-color: #e0e1e5;
   background-size: contain;
@@ -10,9 +9,13 @@
 
   @include media-breakpoint-up(sm) {
     background-size: cover;
+    background-position: top;
     // background-size: 100% 100%;
   }
   @include media-breakpoint-up(md) {
+    background-size: cover;
+  }
+  @include media-breakpoint-up(lg) {
     background-position: top;
     background-size: 100% 100%;
   }
@@ -201,6 +204,7 @@
     #ffa841 3px,
     #ffb348 4px
   );
+
   width: 100%;
   justify-content: center;
   color: $primary;
@@ -209,23 +213,60 @@
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
   border: 1px solid #ffb348;
-  &:hover {
-    background: repeating-linear-gradient(
-      130deg,
-      #ffac36,
-      #e29529 1px,
-      #ffa841 3px,
-      #ffb348 4px
-    );
-  }
+  z-index: 1;
+  // &:hover {
+  //   background: repeating-linear-gradient(
+  //     130deg,
+  //     #ffac36,
+  //     #e29529 1px,
+  //     #ffa841 3px,
+  //     #ffb348 4px
+  //   );
+  // }
+  // &::before {
+
+  //   pos
+  // }
 
   @media (max-width: 576px) {
     @include font-size(0.9rem);
     margin-top: 20px;
-    display: block;
+    position: relative;
     margin: 0 auto;
     margin-top: 20px !important;
   }
+}
+
+.modal .btn-rounded::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: repeating-linear-gradient(
+    130deg,
+    #ff9e17,
+    #ffa82e 1px,
+    #ff9a1f 3px,
+    #ffa424 4px
+  );
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  border-radius: 5px;
+
+  // @media (max-width: 576px) {
+  //   @include font-size(0.9rem);
+  //   margin-top: 20px;
+
+  //   margin: 0 auto;
+  //   margin-top: 20px !important;
+  // }
+}
+.modal .btn-rounded:hover::before {
+  opacity: 1;
 }
 
 .modal-right-content {
@@ -233,8 +274,19 @@
   @include media-breakpoint-up(sm) {
     margin-top: 500px;
   }
+  @include media-breakpoint-up(md) {
+    margin-top: 400px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 500px;
+  }
 }
 
 .modal .display-2--title {
   text-transform: none;
+}
+
+br {
+  @media (max-width: px) {
+  }
 }

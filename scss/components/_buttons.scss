@@ -1,11 +1,19 @@
 @use "../custom" as *;
+
+.btn-primary {
+  background-color: transparent;
+  border-color: transparent !important;
+  &:hover {
+    border-color: transparent !important;
+  }
+}
 .btn-rounded {
   background: repeating-linear-gradient(
     130deg,
-    #3d6553,
-    #3d6553 1px,
+    #3d775d,
+    #1e8657 1px,
     #537d69 3px,
-    #3d6553 4px
+    #0f6c43 4px
   );
   position: relative;
   text-transform: uppercase;
@@ -14,7 +22,40 @@
   margin-top: 40px;
   line-height: 1;
   border-radius: 10px;
-  border-color: #3d6553;
+
+  z-index: 1;
+}
+.btn-rounded::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-color: transparent;
+  background-image: repeating-linear-gradient(
+    130deg,
+    #0c5f3a,
+    #135e3c 1px,
+    #1d7e4f 3px,
+    #216e4b 4px
+  );
+  z-index: -1;
+  transition: opacity 0.9s ease;
+  opacity: 0;
+  border-radius: 6px;
+  border-color: transparent;
+
+  // @media (max-width: 576px) {
+  //   @include font-size(0.9rem);
+  //   margin-top: 20px;
+
+  //   margin: 0 auto;
+  //   margin-top: 20px !important;
+  // }
+}
+.btn-rounded:hover::before {
+  opacity: 1;
 }
 
 .placeorder .btn-rounded {
@@ -30,19 +71,51 @@
   padding: 0.9375rem 1.2rem;
   font-weight: 700;
 
-  &:hover {
-    background: repeating-linear-gradient(
-      130deg,
-      #ffac36,
-      #e29529 1px,
-      #ffa841 3px,
-      #ffb348 4px
-    );
-  }
+  // &:hover {
+  //   background: repeating-linear-gradient(
+  //     130deg,
+  //     #ffac36,
+  //     #e29529 1px,
+  //     #ffa841 3px,
+  //     #ffb348 4px
+  //   );
+  // }
 
   @media (max-width: 576px) {
     @include font-size(1rem);
     display: block;
     margin: 0 auto;
   }
+}
+
+.placeorder .btn-rounded::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: repeating-linear-gradient(
+    130deg,
+    #ff9807,
+    #ffa01c 1px,
+    #fa9519 3px,
+    #ffa424 4px
+  );
+  z-index: -1;
+  transition: opacity 0.9s ease;
+  opacity: 0;
+  border-radius: 6px;
+
+  // @media (max-width: 576px) {
+  //   @include font-size(0.9rem);
+  //   margin-top: 20px;
+
+  //   margin: 0 auto;
+  //   margin-top: 20px !important;
+  // }
+}
+.placeorder .btn-rounded:hover::before {
+  opacity: 1;
 }

@@ -50,8 +50,8 @@
             z dzieckiem<span>
               <hr class=" border-4 border-top border-primary justify-content-sm-center ">
 
-              <button type="button" class="btn btn-rounded btn-primary btn-lg " data-bs-toggle="modal" data-bs-target="#orderModal">zamów zestaw <br> stolik z
-                krzesełkiem</button>
+              <a href="#kontakt"> <button type="button" class="btn btn-rounded btn-primary btn-lg " >zamów zestaw <br> stolik z
+                krzesełkiem</button> </a>
         </div>
       </div>
   </section>
@@ -277,7 +277,7 @@
 
 
   <!-- Place order(Złóź) section -->
-  <div class="placeorder  bg-primary mb-3 d-flex align-items-center ">
+  <div id="kontakt" class="placeorder  bg-primary mb-3 d-flex align-items-center ">
     <div class="container bg-primary">
       <div class="row">
         <div class="col-12 col-md-6 pt-5 pb-5 wow animate__animated fadeInUp">
@@ -289,7 +289,7 @@
               <li>drewniany stolik edukacyjny</li>
               <li>dwustronny blat</li>
               <li>stopki z mocowaniem - wysokość 6 cm</li>
-              <li>drewniane krzesełko x 2</li>
+              <li>drewniane krzesełko</li>
             </ul>
              
           <span class="display-1--description text-light ">Wymiary:</span>
@@ -380,7 +380,7 @@
                 <li>drewniany stolik edukacyjny</li>
                 <li>dwustronny blat</li>
                 <li>stopki z mocowaniem - wysokość 6 cm</li>
-                <li>drewniane krzesełko</li>
+                <li>drewniane krzesełko x 2</li>
               </ul>
             <span class="display-1--description text-light ">Wymiary:</span>
             <ul class="dashed">
@@ -411,33 +411,33 @@
               <div class="text w-100 py-0 ">
                 <span class="display-3--title">ZAMÓW PRODUKT</span>
                 <hr class=" border-5 border-top border-primary">
-                <form action="#" class="signup-form">
+                <form action="#" class="signup-form" id="form1">
                   <div class="form-group">
                     <input type="text" class="form-control" required="true">
                     <label class="label" for="name" >Imię i nazwisko*</label>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" required="true">
-                    <label class="label" for="email" >Adres dostawy*</label>
+                    <input type="text" class="form-control">
+                    <label class="label" for="delivery address" >Adres dostawy</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="phone" required="true">
-                    <label class="label" for="phone" >Telefon*</label>
+                    <input type="text" class="form-control" id="phone">
+                    <label class="label" for="phone" >Telefon</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="email" required="true">
+                    <input type="email" class="form-control" id="email1" required="true">
                     <label class="label" for="email" >Email*</label>
                   </div>
                   <div class="form-group mb-1">
-                    <input type="email" class="form-control" id="emailConfirm" required="true">
+                    <input type="email" class="form-control" id="emailConfirm1" required="true">
                     <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
                   </div>
                   <div class="form-group">
                     <div class="form-check text-left mt-3">
                       <label  class="custom-control fill-checkbox">
-                        <input id="invoiceData" type="checkbox" class=" form-check-input fill-control-input" required="true">
+                        <input id="invoiceData1" type="checkbox" class="form-check-input fill-control-input" checked="false">
                         <span class="fill-control-indicator"></span>
-                        <span class="fill-control-description display-3--description">DANE DO FAKURY*</span>
+                        <span class="fill-control-description display-3--description">DANE DO FAKTURY</span>
                       </label>
                     </div>
                   </div>
@@ -447,11 +447,11 @@
                       <label class="label" for="company">Nazwa firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="addressCompany" required="true">
+                      <input type="text" class="form-control" id="addressCompany">
                       <label class="label" for="addressCompany">Adres firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="taxnumber" required="true"> 
+                      <input type="text" class="form-control" id="taxnumber"> 
                       <label class="label" for="taxnumber">NIP</label>
                     </div>
                 </div>
@@ -501,7 +501,7 @@
                         
                         <br>
                         <span class="display-2--description">Suma:</span>
-                        <h1 class="display-2--title">1299 zł</h1> 
+                        <h1 class="display-2--title">1229 zł</h1> 
                         
                   </div>
 
@@ -532,47 +532,47 @@
               <div class="text w-100 py-0 ">
                 <span class="display-3--title">ZAMÓW PRODUKT</span>
                 <hr class=" border-5 border-top border-primary">
-                <form action="#" class="signup-form">
+                <form action="#" class="signup-form" id="form2">
                   <div class="form-group">
                     <input type="text" class="form-control" required="true">
                     <label class="label" for="name" >Imię i nazwisko*</label>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" required="true">
-                    <label class="label" for="email" >Adres dostawy*</label>
+                    <input type="text" class="form-control" required="true">
+                    <label class="label" for="delivery address" >Adres dostawy</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="phone" required="true">
-                    <label class="label" for="phone" >Telefon*</label>
+                    <input type="text" class="form-control" id="phone" >
+                    <label class="label" for="phone" >Telefon</label>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="email" required="true">
-                    <label class="label" for="email" >Email*</label>
+                    <input type="email" class="form-control" id="email2" required="true">
+                    <label class="label" for="email2" >Email*</label>
                   </div>
                   <div class="form-group mb-1">
-                    <input type="email" class="form-control" id="emailConfirm" required="true">
-                    <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
+                    <input type="email" class="form-control" id="emailConfirm2" required="true">
+                    <label class="label" for="emailConfirm2" required="true">Potwierdź email*</label>
                   </div>
                   <div class="form-group">
                     <div class="form-check text-left mt-3">
                       <label  class="custom-control fill-checkbox">
-                        <input id="invoiceData" type="checkbox" class=" form-check-input fill-control-input" required="true">
+                        <input id="invoiceData2" type="checkbox" class="form-check-input fill-control-input" checked="false">
                         <span class="fill-control-indicator"></span>
-                        <span class="fill-control-description display-3--description">DANE DO FAKURY*</span>
+                        <span class="fill-control-description display-3--description">DANE DO FAKTURY</span>
                       </label>
                     </div>
                   </div>
-                  <div id="invoiceFields" class="three_feilds">
+                  <div id="invoiceFields2" class="three_feilds">
                     <div class="form-group">
                       <input type="text" class="form-control" id="company" >
                       <label class="label" for="company">Nazwa firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="addressCompany" required="true">
+                      <input type="text" class="form-control" id="addressCompany" >
                       <label class="label" for="addressCompany">Adres firmy</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="taxnumber" required="true"> 
+                      <input type="text" class="form-control" id="taxnumber" > 
                       <label class="label" for="taxnumber">NIP</label>
                     </div>
                 </div>
@@ -654,16 +654,84 @@
 
 
  <script> 
-  const checkbox = document.querySelector("#invoiceData");
+  const checkbox1 = document.querySelector("#invoiceData1");
+  const checkbox2 = document.querySelector("#invoiceData2");
   const invoiceFields = document.querySelector("#invoiceFields");
+  const invoiceFields2 = document.querySelector("#invoiceFields2");
+
+
+  function validate(){
+    let email1 = document.querySelector("#email1").value;
+  let emailConfirm1 = document.querySelector("#emailConfirm1").value;
+  
+  if(email1 === emailConfirm1){
+    alert("Values matched");
+  } else {
+    alert("Values not matching");
+  }
+ 
+}
+function validate2(){
+  let email2 = document.querySelector("#email2").value;
+  let emailConfirm2 = document.querySelector("#emailConfirm2").value;
+  if(email2 === emailConfirm2){
+    alert("Values matched");
+  } else {
+    alert("Values not matching");
+  }
+ 
+}
+
+
+ 
+
+
+
+
+  const form1 = document.querySelector("#form1");
+  form1.addEventListener("submit", e => {
+    e.preventDefault();
+    console.log("modal1");
+    validate();
+
+  });
+  const form2 = document.querySelector("#form2");
+  form2.addEventListener("submit", e => {
+    e.preventDefault();
+    validate2();
+    console.log("modal2");
+  });
+
   const toggleFields = (e) => {
+
     if (invoiceFields.classList.contains("show")) {
       invoiceFields.classList.remove("show");
     } else{
       invoiceFields.classList.add("show");
     }
+
+    if (invoiceFields2.classList.contains("show")) {
+      invoiceFields2.classList.remove("show");
+    } else{
+      invoiceFields2.classList.add("show");
+    }
   }
-  checkbox.addEventListener("change", (e) => toggleFields(e));
+  checkbox1.addEventListener("change", (e) => toggleFields(e));
+  checkbox2.addEventListener("change", (e) => toggleFields(e));
+
+
+  if (checkbox1.checked) {
+
+    invoiceFields.classList.add("show");
+  } else {
+    invoiceFields.classList.remove("show");
+  }
+  if (checkbox2.checked) {
+    invoiceFields2.classList.add("show");
+  } else {
+    invoiceFields2.classList.remove("show");
+  }
+
 </script>
 
  <script> new WOW().init();</script>
