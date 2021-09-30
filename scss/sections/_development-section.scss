@@ -50,3 +50,18 @@
 .development .selected {
   align-self: center;
 }
+
+.development .carousel-item {
+  height: 350px;
+}
+
+.development .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.development .carousel-indicators {
+  justify-content: start;
+  bottom: -70px;
+  margin-left: 0 !important;
+}

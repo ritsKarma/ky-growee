@@ -11587,6 +11587,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   align-self: center;
 }
 
+.development .carousel-item {
+  height: 350px;
+}
+
+.development .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.development .carousel-indicators {
+  justify-content: start;
+  bottom: -70px;
+  margin-left: 0 !important;
+}
+
 .wrap-effect img {
   transition: 0.5s ease;
 }
