@@ -2,7 +2,7 @@
 
 .menu {
   background: transparent;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   li {
     padding: 0 0.7rem;
 
@@ -10,6 +10,10 @@
       color: $primary !important;
       // font-weight: 700 !important;
     }
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 60px;
   }
 }
 
@@ -32,5 +36,19 @@
     justify-content: center !important;
     text-align: center;
     line-height: 0px;
+  }
+}
+
+.juscenter .display-1 {
+  // margin-top: 50px;
+  // margin-bottom: 1rem;
+  @media screen and (max-width: 576px) {
+    &--title {
+      @include font-size(2rem);
+      color: $primary;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+    }
   }
 }

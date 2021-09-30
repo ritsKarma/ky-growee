@@ -34,7 +34,7 @@
             </li>
             <li class="nav-item text-sm-end">
               <a class="nav-link display-2--title pb-lg-0" href="#">+48 600 601 602 <br><a
-                  href="mailto:kontakt@glowee.pl" class="nav-link  pt-lg-0 fs-4 fw-light">kontakt@glowee.pl</a></a>
+                  href="mailto:kontakt@glowee.pl" class="nav-link  pt-lg-0 fs-4 fw-light">kontakt@groweeclub.com </a></a>
             </li>
           </ul>
         </div>
@@ -412,7 +412,7 @@
                 <hr class=" border-5 border-top border-primary">
                 <form action="#" class="signup-form" id="form1">
                   <div class="form-group">
-                    <input type="text" class="form-control" required="true">
+                    <input id="name" type="text" class="form-control" required="true">
                     <label class="label" for="name" >Imię i nazwisko*</label>
                   </div>
                   <div class="form-group">
@@ -650,89 +650,7 @@
    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  <script src="/assets/js/bootstrap.bundle.js"></script>
-
-
- <script> 
-  const checkbox1 = document.querySelector("#invoiceData1");
-  const checkbox2 = document.querySelector("#invoiceData2");
-  const invoiceFields = document.querySelector("#invoiceFields");
-  const invoiceFields2 = document.querySelector("#invoiceFields2");
-
-
-  function validate(){
-    let email1 = document.querySelector("#email1").value;
-  let emailConfirm1 = document.querySelector("#emailConfirm1").value;
-  
-  if(email1 === emailConfirm1){
-    alert("Values matched");
-  } else {
-    alert("Values not matching");
-  }
- 
-}
-function validate2(){
-  let email2 = document.querySelector("#email2").value;
-  let emailConfirm2 = document.querySelector("#emailConfirm2").value;
-  if(email2 === emailConfirm2){
-    alert("Values matched");
-  } else {
-    alert("Values not matching");
-  }
- 
-}
-
-
- 
-
-
-
-
-  const form1 = document.querySelector("#form1");
-  form1.addEventListener("submit", e => {
-    e.preventDefault();
-    console.log("modal1");
-    validate();
-
-  });
-  const form2 = document.querySelector("#form2");
-  form2.addEventListener("submit", e => {
-    e.preventDefault();
-    validate2();
-    console.log("modal2");
-  });
-
-  const toggleFields = (e) => {
-
-    if (invoiceFields.classList.contains("show")) {
-      invoiceFields.classList.remove("show");
-    } else{
-      invoiceFields.classList.add("show");
-    }
-
-    if (invoiceFields2.classList.contains("show")) {
-      invoiceFields2.classList.remove("show");
-    } else{
-      invoiceFields2.classList.add("show");
-    }
-  }
-  checkbox1.addEventListener("change", (e) => toggleFields(e));
-  checkbox2.addEventListener("change", (e) => toggleFields(e));
-
-
-  if (checkbox1.checked) {
-
-    invoiceFields.classList.add("show");
-  } else {
-    invoiceFields.classList.remove("show");
-  }
-  if (checkbox2.checked) {
-    invoiceFields2.classList.add("show");
-  } else {
-    invoiceFields2.classList.remove("show");
-  }
-
-</script>
-
+ <script src="/assets/js/myScript.js"></script>
  <script> new WOW().init();</script>
 </body>
 

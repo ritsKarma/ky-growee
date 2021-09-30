@@ -1,4 +1,9 @@
 @charset "UTF-8";
+a {
+  color: transparent !important;
+  text-decoration: none !important;
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11135,6 +11140,13 @@ textarea.form-control-lg {
   border-radius: 10px;
   z-index: 1;
 }
+@media (max-width: 576px) {
+  .btn-rounded {
+    display: block;
+    font-size: 0.9rem;
+    padding: 10px 10px 10px 10px;
+  }
+}
 
 .btn-rounded::before {
   position: absolute;
@@ -11150,6 +11162,12 @@ textarea.form-control-lg {
   opacity: 0;
   border-radius: 6px;
   border-color: transparent;
+}
+@media (max-width: 576px) {
+  .btn-rounded::before {
+    display: block;
+    font-size: 0.8rem;
+  }
 }
 
 .btn-rounded:hover::before {
@@ -11262,13 +11280,17 @@ textarea.form-control-lg {
 }
 
 .border-4 {
+  width: 100px;
+  display: block;
   justify-content: center;
+  margin: 15px auto 69px auto;
   opacity: 0.5;
 }
 @media (min-width: 576px) {
   .border-4 {
     font-size: 0.9rem;
     width: 200px;
+    margin: 20px 0 30px 0;
     justify-content: flex-start;
   }
 }
@@ -11424,13 +11446,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .menu {
   background: transparent;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .menu li {
   padding: 0 0.7rem;
 }
 .menu li a {
   color: #012e1a !important;
+}
+@media (min-width: 576px) {
+  .menu {
+    margin-bottom: 60px;
+  }
 }
 
 .nav-custom {
@@ -11455,13 +11482,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-.intro-section {
-  background-image: url(/images/mobile-hero.jpg);
-  height: 700px;
-  background-size: cover;
-  background-position: center;
+@media screen and (max-width: 576px) {
+  .juscenter .display-1--title {
+    font-size: calc(1.325rem + 0.9vw);
+    color: #012e1a;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+  }
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 576px) and (min-width: 1200px) {
+  .juscenter .display-1--title {
+    font-size: 2rem;
+  }
+}
+
+.intro-section {
+  background-image: url(/images/mobile-hero1.jpg);
+  background-repeat: no-repeat;
+  height: 615px;
+  background-size: cover;
+  background-position: center top;
+  display: block;
+  position: relative;
+}
+@media (min-width: 576px) {
   .intro-section {
     background-image: url(/images/banner.png);
     max-width: 100%;

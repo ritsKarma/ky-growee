@@ -67,14 +67,16 @@
 
 //for br underline
 .border-4 {
+  width: 100px;
+  display: block;
   justify-content: center;
-
+  margin: 15px auto 69px auto;
   opacity: 0.5;
 
   @include media-breakpoint-up(sm) {
     @include font-size(0.9rem);
     width: 200px;
-
+    margin: 20px 0 30px 0;
     justify-content: flex-start;
   }
 }

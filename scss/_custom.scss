@@ -28,6 +28,14 @@ $form-check-input-width: 1.5em;
 $btn-close-width: 1.5em;
 $btn-close-color: $primary;
 $btn-close-opacity: 1;
+
+//anchor
+a {
+  color: transparent !important;
+  text-decoration: none !important;
+}
+
+//anchor
 //import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //import rfs
