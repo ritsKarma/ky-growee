@@ -11526,7 +11526,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @media (min-width: 576px) {
   .testimonials {
+    margin: 80px 0 76px 0;
+  }
+}
+@media (min-width: 768px) {
+  .testimonials {
     margin: 80px 0 40px 0;
+  }
+}
+
+.development.bg-image {
+  background-image: url("/images/postaw.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media (max-width: 576px) {
+  .development.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
   }
 }
 
@@ -11534,37 +11552,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 100px 0 100px 0;
 }
 
-.development2.bg-image2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40vh;
+.development .carousel-indicators [data-bs-target] {
+  margin-bottom: 0 !important;
 }
-@media (min-width: 576px) {
-  .development2.bg-image2 {
-    padding: 60px 0px 60px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 55vh;
-  }
-}
-@media (min-width: 768px) {
-  .development2.bg-image2 {
-    padding: 80px 0px 80px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-  }
-}
-@media (min-width: 992px) {
-  .development2.bg-image2 {
-    padding: 80px 0px 80px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 65vh;
+@media (max-width: 576px) {
+  .development .carousel-indicators [data-bs-target] {
+    margin-bottom: 0;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #012e1a;
+    background-clip: content-box;
+    border: 3px solid #738980;
+    border-spacing: 0.5px;
+    transition: opacity 0.6s ease;
+    border-radius: 150%;
+    border-spacing: 20px;
   }
 }
 
