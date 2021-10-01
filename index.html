@@ -8,7 +8,8 @@
   <!-- Bootstrap CSS -->
 
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  
   <title>Growee Club</title>
   <link rel="shortcut icon" href="/images/favicon.jpg" type="/x-icon">
 </head>
@@ -83,8 +84,7 @@
     <div class="bg-light w-100 ">
       <div class="container-fluid">
         <div class="row  justify-content-sm-center justify-content-lg-end ">
-          <div
-            class="col-12 col-md-10 col-lg-6 col-xl-4 mt-2 mb-2 mt-md-3 mb-md-3 selected wow animate__animated fadeInUp">
+          <div class="col-12 col-md-10 col-lg-6 col-xl-4 mt-2 mb-2 mt-md-3 mb-md-3 selected wow animate__animated fadeInUp">
             <div id="carouselText" class="carousel slide" data-bs-ride="carousel" data-touch="true">
 
               <span class="display-1--title">Postaw na rozwój dziecka!</span>
@@ -455,7 +455,7 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  <!-- Modal 1-->
   <div class="modal fade text-primary" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
@@ -468,82 +468,85 @@
                 <div class="text w-100 py-0 ">
                   <span class="display-3--title">ZAMÓW PRODUKT</span>
                   <hr class=" border-5 border-top border-primary">
-                  <form action="#" class="signup-form" id="form1">
-                    <div class="form-group">
-                      <input id="name" type="text" name="name" class="form-control" required="true">
-                      <label class="label" for="name">Imię i nazwisko*</label>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="address">
-                      <label class="label" for="delivery address">Adres dostawy</label>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="phone">
-                      <label class="label" for="phone">Telefon</label>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="email1" required="true">
-                      <label class="label" for="email">Email*</label>
-                    </div>
-                    <div class="form-group mb-1">
-                      <input type="email" class="form-control" id="emailConfirm1" required="true">
-                      <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check text-left mt-3">
-                        <label class="custom-control fill-checkbox">
-                          <input id="invoiceData1" type="checkbox" class="form-check-input fill-control-input"
-                            checked="false">
-                          <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description display-3--description">DANE DO FAKTURY</span>
-                        </label>
-                      </div>
-                    </div>
-                    <div id="invoiceFields" class="three_feilds">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="company">
-                        <label class="label" for="company">Nazwa firmy</label>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="addressCompany">
-                        <label class="label" for="addressCompany">Adres firmy</label>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="taxnumber">
-                        <label class="label" for="taxnumber">NIP</label>
-                      </div>
-                    </div>
-                    <span class="display-3--description mt-2 "> *informacja - numer zamówienia oraz dane do płatności
-                      zostaną
-                      przekazane za pomocą wiadomości email po wysłaniu wypełnionego
-                      zamówienia.</span>
-                    <div class="form-group">
-                      <div class="form-check text-left mt-3">
-                        <label class="custom-control fill-checkbox">
-                          <input type="checkbox" class=" form-check-input fill-control-input">
-                          <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description display-3--description "> Oświadczam ze zapoznałem się z
-                            Regulaminem Serwisu*</span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check text-left">
-                        <label class="custom-control fill-checkbox">
-                          <input type="checkbox" class=" form-check-input fill-control-input">
-                          <span class="fill-control-indicator"></span>
-                          <span class="fill-control-description display-3--description"> Akceptuję politykę
-                            prywatności*</span>
-                        </label>
-                      </div>
-                    </div>
+                          <form action="#" class="signup-form" id="form1">
+                            <div class="form-group">
+                              <i class="fas fa-check-circle"></i>
+                              <i class="fas fa-exclamation-circle"></i>
+                              <small>Error Msg</small>
+                              <input id="name" type="text" name="name" class="form-control" placeholder="Enter your full name" required="true">
+                              <label class="label" for="name">Imię i nazwisko*</label>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="address">
+                              <label class="label" for="delivery address">Adres dostawy</label>
+                            </div>
+                            <div class="form-group">
+                              <input type="number" class="form-control" id="phone">
+                              <label class="label" for="phone">Telefon</label>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="email1" required="true">
+                              <label class="label" for="email">Email*</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input type="email" class="form-control" id="emailConfirm1" required="true">
+                              <label class="label" for="emailConfirm" required="true">Potwierdź email*</label>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check text-left mt-3">
+                                <label class="custom-control fill-checkbox">
+                                  <input id="invoiceData1" type="checkbox" class="form-check-input fill-control-input"
+                                    checked="false">
+                                  <span class="fill-control-indicator"></span>
+                                  <span class="fill-control-description display-3--description">DANE DO FAKTURY</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div id="invoiceFields" class="three_feilds">
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="company">
+                                <label class="label" for="company">Nazwa firmy</label>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="addressCompany">
+                                <label class="label" for="addressCompany">Adres firmy</label>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="taxnumber">
+                                <label class="label" for="taxnumber">NIP</label>
+                              </div>
+                            </div>
+                            <span class="display-3--description mt-2 "> *informacja - numer zamówienia oraz dane do płatności
+                              zostaną
+                              przekazane za pomocą wiadomości email po wysłaniu wypełnionego
+                              zamówienia.</span>
+                            <div class="form-group">
+                              <div class="form-check text-left mt-3">
+                                <label class="custom-control fill-checkbox">
+                                  <input type="checkbox" class=" form-check-input fill-control-input">
+                                  <span class="fill-control-indicator"></span>
+                                  <span class="fill-control-description display-3--description "> Oświadczam ze zapoznałem się z
+                                    Regulaminem Serwisu*</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check text-left">
+                                <label class="custom-control fill-checkbox">
+                                  <input type="checkbox" class=" form-check-input fill-control-input">
+                                  <span class="fill-control-indicator"></span>
+                                  <span class="fill-control-description display-3--description"> Akceptuję politykę
+                                    prywatności*</span>
+                                </label>
+                              </div>
+                            </div>
 
 
-                    <button class="btn btn-rounded btn-secondary btn-lg d-flex" type="submit">zamów zestaw </br>
-                      stolik z dwoma krzesełami</button>
+                            <button class="btn btn-rounded btn-secondary btn-lg d-flex" type="submit">zamów zestaw </br>
+                              stolik z dwoma krzesełami</button>
 
 
-                  </form>
+                          </form>
                 </div>
               </div>
             </div>

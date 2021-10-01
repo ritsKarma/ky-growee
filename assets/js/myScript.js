@@ -102,3 +102,5 @@ formModal1.addEventListener("submit", sendForm);
 //   //   console.log("test");
 //   console.log(formDataSerialized, "formDataSerialized");
 // });
+
+Brand new code
