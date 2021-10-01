@@ -8,18 +8,18 @@ function validate() {
   let emailConfirm1 = document.querySelector("#emailConfirm1").value;
 
   if (email1 === emailConfirm1) {
-    alert("Values matched");
+    return;
   } else {
-    alert("Values not matching");
+    alert("Maile nie są takie same.");
   }
 }
 function validate2() {
   let email2 = document.querySelector("#email2").value;
   let emailConfirm2 = document.querySelector("#emailConfirm2").value;
   if (email2 === emailConfirm2) {
-    alert("Values matched");
+    return;
   } else {
-    alert("Values not matching");
+    alert("Maile nie są takie same.");
   }
 }
 
@@ -62,69 +62,49 @@ if (checkbox2.checked) {
   invoiceFields2.classList.remove("show");
 }
 
-//after Mateusz code
-
 const url = "https://mailer.jellydev.pl/growe/send-contact";
 const formModal1 = document.getElementById("form1");
 const formModal2 = document.getElementById("form2");
 
-// const testData = () => {
-//     const inputs = document.querySelectorAll(".form-control");
-//     inputs.forEach(input => {
-//         input.value = "topform-Test@value.pl";
-//     });
-// }
+const buttonHandle = (form, message) => {
+  let submitBtn = form.querySelector("button");
+  if (submitBtn.classList.contains("btn-secondary")) {
+    submitBtn.innerText = message;
+  }
+};
+
 const sendForm = (e) => {
   e.preventDefault();
-
-  // let formData = new FormData();
   const thisForm = e.target;
-  // const inputs = [...thisForm.children];
   let inputs = thisForm.getElementsByTagName("input");
-
-  // const thisForm = e.target;
   let formData = new FormData();
   inputs = [...inputs];
   inputs.forEach((input) => {
-    console.log(input.name);
-    console.log(input.value);
-    // if (input.classList.contains("form-control")) {
     formData.append(input.name, input.value);
-    // }
   });
-  console.log(inputs);
-  // console.log("inputs", formData.entries());
-  // for (var pair of formData.entries()) {
-  //   console.log(pair[0] + "--> " + pair[1]);
-  // }
   fetch(url, {
     method: "post",
     body: formData,
   })
     .then((res) => {
-      // buttonHandle(thisForm);
-
-      console.log(res);
+      buttonHandle(thisForm, "Wysyłanie...");
       if (res.status === 200) {
-        // inputEffects("success");
+        buttonHandle(thisForm, "Zamówienie zostało złożnone");
+        thisForm.reset();
+        checkbox1.checked
+          ? (checkbox1.checked = false)
+          : (checkbox1.checked = false);
+        checkbox2.checked
+          ? (checkbox2.checked = false)
+          : (checkbox2.checked = false);
       } else {
-        // inputEffects("error");
+        buttonHandle(thisForm, "Spróbuj ponownie");
       }
     })
     .catch((err) => {
       console.log(err);
-      // inputEffects("error");
     });
 };
 
 formModal1.addEventListener("submit", sendForm);
 formModal2.addEventListener("submit", sendForm);
-
-// formModal1.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   const formData = new FormData(formModal1);
-//   const formDataSerialized = Object.fromEntries(formData);
-//   //   console.log("test");
-//   console.log(formDataSerialized, "formDataSerialized");
-// });
