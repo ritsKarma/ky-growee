@@ -11530,26 +11530,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
-.development.bg-image {
-  background-image: url("/images/postaw.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-@media (max-width: 576px) {
-  .development.bg-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 0;
-  }
-}
-
 .development {
   padding: 100px 0 100px 0;
 }
 
 .development2.bg-image2 {
-  background-image: url("/images/2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11581,26 +11566,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: center;
     height: 65vh;
   }
-}
-
-.development .selected {
-  align-self: center;
-}
-
-.development .carousel-item {
-  height: 350px;
-}
-
-.development .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
-
-.development .carousel-indicators {
-  justify-content: start;
-  bottom: -70px;
-  margin-left: 0 !important;
 }
 
 .wrap-effect img {

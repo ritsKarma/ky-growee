@@ -1,22 +1,22 @@
 @use "../custom" as *;
 
-.development.bg-image {
-  background-image: url("/images/postaw.jpg");
-  //height: 800px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  @media (max-width: 576px) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 0;
-  }
-}
+// .development.bg-image {
+//   background-image: url("/images/postaw.jpg");
+//   //height: 800px;
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+//   @media (max-width: 576px) {
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: auto;
+//     padding: 0;
+//   }
+// }
 .development {
   padding: 100px 0 100px 0;
 }
 .development2.bg-image2 {
-  background-image: url("/images/2.png");
+  // background-image: url("/images/2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -47,25 +47,25 @@
   }
 }
 
-.development .selected {
-  align-self: center;
-}
+// .development .selected {
+//   align-self: center;
+// }
 
-.development .carousel-item {
-  height: 350px;
-}
+// .development .carousel-item {
+//   height: 350px;
+// }
 
-.development .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
-.development .carousel-indicators {
-  justify-content: start;
-  bottom: -70px;
-  margin-left: 0 !important;
-}
+// .development .carousel-indicators li {
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 100%;
+// }
+// .development .carousel-indicators {
+//   justify-content: start;
+//   bottom: -70px;
+//   margin-left: 0 !important;
+// }
 
-.test-class {
-  background: transparent;
-}
+// .test-class {
+//   background: transparent;
+// }
