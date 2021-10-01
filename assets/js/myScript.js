@@ -65,8 +65,8 @@ if (checkbox2.checked) {
 //after Mateusz code
 
 const url = "https://mailer.jellydev.pl/growe/send-contact";
-const formModal1 = document.getElementById("form2");
-const formModal2 = document.getElementById("form1");
+const formModal1 = document.getElementById("form1");
+const formModal2 = document.getElementById("form2");
 
 // const testData = () => {
 //     const inputs = document.querySelectorAll(".form-control");
@@ -76,23 +76,49 @@ const formModal2 = document.getElementById("form1");
 // }
 const sendForm = (e) => {
   e.preventDefault();
-  const thisForm = e.target;
-  let formData = new FormData(thisForm);
-  //   const inputs = [...thisForm.children];
-  //   inputs.forEach((input) => {
-  //     if (input.classList.contains("form-control")) {
-  //       formData.append(input.name, input.value);
-  //     }
-  //     console.log("inputs", input.name, input.value);
-  //   });
 
-  console.log("inputs", formData.entries());
-  for (var pair of formData.entries()) {
-    console.log(pair[0] + "--> " + pair[1]);
-  }
+  // let formData = new FormData();
+  const thisForm = e.target;
+  // const inputs = [...thisForm.children];
+  let inputs = thisForm.getElementsByTagName("input");
+
+  // const thisForm = e.target;
+  let formData = new FormData();
+  inputs = [...inputs];
+  inputs.forEach((input) => {
+    console.log(input.name);
+    console.log(input.value);
+    // if (input.classList.contains("form-control")) {
+    formData.append(input.name, input.value);
+    // }
+  });
+  console.log(inputs);
+  // console.log("inputs", formData.entries());
+  // for (var pair of formData.entries()) {
+  //   console.log(pair[0] + "--> " + pair[1]);
+  // }
+  fetch(url, {
+    method: "post",
+    body: formData,
+  })
+    .then((res) => {
+      // buttonHandle(thisForm);
+
+      console.log(res);
+      if (res.status === 200) {
+        // inputEffects("success");
+      } else {
+        // inputEffects("error");
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      // inputEffects("error");
+    });
 };
 
 formModal1.addEventListener("submit", sendForm);
+formModal2.addEventListener("submit", sendForm);
 
 // formModal1.addEventListener("submit", (e) => {
 //   e.preventDefault();
@@ -102,5 +128,3 @@ formModal1.addEventListener("submit", sendForm);
 //   //   console.log("test");
 //   console.log(formDataSerialized, "formDataSerialized");
 // });
-
-Brand new code
