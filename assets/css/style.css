@@ -11145,6 +11145,7 @@ textarea.form-control-lg {
     display: block;
     font-size: 0.9rem;
     padding: 10px 10px 10px 10px;
+    margin-top: 0px;
   }
 }
 
@@ -11285,6 +11286,11 @@ textarea.form-control-lg {
   justify-content: center;
   margin: 15px auto 69px auto;
   opacity: 0.5;
+}
+@media screen and (max-width: 576px) {
+  .border-4 {
+    margin: 15px auto 15px auto;
+  }
 }
 @media (min-width: 576px) {
   .border-4 {
@@ -11497,6 +11503,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    margin-bottom: 5px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    margin-bottom: 0px;
+  }
+}
+
 .intro-section {
   background-image: url(/images/mobile-hero1.jpg);
   background-repeat: no-repeat;
@@ -11521,6 +11539,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .img-overlay {
   position: relative;
 }
+.max-w {
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .max-w {
+    width: 300px;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-banner {
+    justify-content: center;
+  }
+}
+
 .testimonials {
   margin: 40px 0 33px 0;
 }
@@ -11537,13 +11571,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .development.bg-image {
   background-image: url("/images/postaw.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 @media (max-width: 576px) {
   .development.bg-image {
     background-repeat: no-repeat;
-    background-size: cover;
     padding: 0;
   }
 }

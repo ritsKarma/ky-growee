@@ -2,12 +2,11 @@
 
 .development.bg-image {
   background-image: url("/images/postaw.jpg");
-
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   @media (max-width: 576px) {
     background-repeat: no-repeat;
-    background-size: cover;
 
     padding: 0;
   }

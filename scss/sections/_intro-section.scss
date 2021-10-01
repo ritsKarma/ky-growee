@@ -26,3 +26,17 @@
   @include media-breakpoint-up(md) {
   }
 }
+
+.max-w {
+  justify-content: center;
+  @media (min-width: 576px) {
+    width: 300px;
+    justify-content: start;
+  }
+}
+
+.btn-banner {
+  @media (max-width: 576px) {
+    justify-content: center;
+  }
+}

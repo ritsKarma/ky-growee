@@ -52,3 +52,15 @@
     }
   }
 }
+
+.navbar-brand {
+  @media screen and (max-width: 576px) {
+    margin-bottom: 5px !important;
+  }
+}
+
+.menu {
+  @media screen and (max-width: 576px) {
+    margin-bottom: 0px;
+  }
+}
