@@ -11135,7 +11135,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
   padding: 18px 10px 18px 10px;
   font-weight: 700;
-  margin-top: 40px;
+  margin-top: 30px;
   line-height: 1;
   border-radius: 10px;
   z-index: 1;
@@ -11289,7 +11289,7 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 576px) {
   .border-4 {
-    margin: 15px auto 15px auto;
+    margin: 5px auto 10px auto;
   }
 }
 @media (min-width: 576px) {
@@ -11546,6 +11546,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .max-w {
     width: 300px;
     justify-content: start;
+    line-height: 1;
   }
 }
 
@@ -11684,6 +11685,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .details-wrap {
     padding-left: 15px;
   }
+}
+
+.offer {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .img-modal {
