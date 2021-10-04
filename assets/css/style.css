@@ -11579,6 +11579,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (max-width: 576px) {
   .development.bg-image {
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
   }
 }
@@ -11664,7 +11665,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .carousel-indicators [data-bs-target] {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 14px;
@@ -11682,6 +11683,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transition: opacity 0.6s ease;
   border-radius: 150%;
   border-spacing: 20px;
+}
+@media (min-width: 1200px) {
+  .carousel-indicators [data-bs-target] {
+    margin-bottom: 3rem;
+  }
 }
 
 @media (min-width: 576px) {

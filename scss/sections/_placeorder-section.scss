@@ -23,7 +23,7 @@
 }
 
 .carousel-indicators [data-bs-target] {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 14px; /* change width */
@@ -39,7 +39,10 @@
   border-spacing: 0.5px;
   transition: opacity 0.6s ease;
   border-radius: 150%;
-  border-spacing: 20px; // /* add border-radius */
+  border-spacing: 20px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 3rem;
+  }
 }
 
 .paddingimgtop {
