@@ -23,6 +23,8 @@ function validate2() {
   }
 }
 
+checkbox1.checked = false;
+checkbox2.checked = false;
 const form1 = document.querySelector("#form1");
 form1.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -35,21 +37,23 @@ form2.addEventListener("submit", (e) => {
   validate2();
 });
 
-const toggleFields = (e) => {
+const toggleFields1 = (e) => {
   if (invoiceFields.classList.contains("show")) {
     invoiceFields.classList.remove("show");
   } else {
     invoiceFields.classList.add("show");
   }
+};
 
+const toggleFields2 = (e) => {
   if (invoiceFields2.classList.contains("show")) {
     invoiceFields2.classList.remove("show");
   } else {
     invoiceFields2.classList.add("show");
   }
 };
-checkbox1.addEventListener("change", (e) => toggleFields(e));
-checkbox2.addEventListener("change", (e) => toggleFields(e));
+checkbox1.addEventListener("change", (e) => toggleFields1(e));
+checkbox2.addEventListener("change", (e) => toggleFields2(e));
 
 if (checkbox1.checked) {
   invoiceFields.classList.add("show");
@@ -80,7 +84,11 @@ const sendForm = (e) => {
   let formData = new FormData();
   inputs = [...inputs];
   inputs.forEach((input) => {
-    formData.append(input.name, input.value);
+    if (input.type !== "radio") {
+      formData.append(input.name, input.value);
+    } else {
+      input.checked && formData.append(input.name, input.value);
+    }
   });
   fetch(url, {
     method: "post",
