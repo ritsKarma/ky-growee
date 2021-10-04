@@ -11593,9 +11593,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .development {
   padding: 100px 0 100px 0;
 }
-.development__container {
-  height: 60vh;
-  min-height: 640px;
+@media (max-width: 992px) {
+  .development__container {
+    height: 60vh;
+    min-height: 640px;
+  }
+}
+@media (min-width: 991px) {
+  .development__container {
+    height: 60vh;
+  }
+}
+@media (max-width: 463px) {
+  .development__container {
+    min-height: 500px;
+  }
+}
+@media (min-width: 464px) and (max-width: 991px) {
+  .development__container {
+    height: 60vh;
+    min-height: 460px;
+  }
 }
 .development__container--absolute {
   position: absolute;
