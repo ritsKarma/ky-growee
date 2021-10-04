@@ -11143,8 +11143,8 @@ textarea.form-control-lg {
 @media (max-width: 576px) {
   .btn-rounded {
     display: block;
-    font-size: 0.9rem;
-    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    padding: 15px 15px 15px 15px;
     margin-top: 0px;
   }
 }
@@ -11289,7 +11289,7 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 576px) {
   .border-4 {
-    margin: 5px auto 10px auto;
+    margin: 5px auto 15px auto;
   }
 }
 @media (min-width: 576px) {
@@ -11481,7 +11481,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .juscenter {
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center !important;
     text-align: center;
     line-height: 0px;
@@ -11587,9 +11587,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 100px 0 100px 0;
 }
 
-.development .carousel-indicators [data-bs-target] {
-  margin-bottom: 0 !important;
-}
 @media (max-width: 576px) {
   .development .carousel-indicators [data-bs-target] {
     margin-bottom: 0;
@@ -11617,6 +11614,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .wrap-effect:hover img {
   transform: scale(1.04);
+}
+
+.for-kids .display-2--title {
+  font-size: calc(1.305rem + 0.66vw);
+  color: #012e1a;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .for-kids .display-2--title {
+    font-size: 1.8rem;
+  }
+}
+.for-kids .display-2--description {
+  font-size: 0.9rem;
+  color: #012e1a;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .for-kids .display-2--description {
+    font-size: 0.9rem;
+    display: inline-block;
+  }
 }
 
 .placeorder {

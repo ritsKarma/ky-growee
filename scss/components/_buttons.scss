@@ -25,8 +25,8 @@
   z-index: 1;
   @media (max-width: 576px) {
     display: block;
-    @include font-size(0.9rem);
-    padding: 10px 10px 10px 10px;
+    @include font-size(1rem);
+    padding: 15px 15px 15px 15px;
     margin-top: 0px;
   }
 }

@@ -39,7 +39,6 @@
 // }
 
 .development .carousel-indicators [data-bs-target] {
-  margin-bottom: 0 !important;
   @media (max-width: 576px) {
     margin-bottom: 0;
     box-sizing: content-box;

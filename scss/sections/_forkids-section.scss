@@ -10,3 +10,24 @@
 .wrap-effect:hover img {
   transform: scale(1.04);
 }
+
+.for-kids .display-2 {
+  &--title {
+    @include font-size(1.8rem);
+    color: $primary;
+    text-transform: none;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &--description {
+    @include font-size(0.9rem);
+    // display: block;
+    color: $primary;
+    font-weight: 400;
+
+    @include media-breakpoint-up(md) {
+      @include font-size(0.9rem);
+      display: inline-block;
+    }
+  }
+}
